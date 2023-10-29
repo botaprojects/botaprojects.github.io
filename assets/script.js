@@ -1,6 +1,5 @@
 function changeSelection(elementID) {
     if (elementID !== "itemsContainer") {
-        document.getElementById(selectedVariable).style.backgroundColor = "#00000000"
         document.getElementById(selectedVariable).style.backgroundColor = null
         document.getElementById(elementID).style.backgroundColor = "#454545"
         switch (elementID) {
@@ -166,7 +165,7 @@ function changeSelection(elementID) {
             case "d2":
                 changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1166925656131645540/Dolphin_Lite_V3.5.7z")
                 disableButtons(4)
-                break; 
+                break;
             case "d3":
                 changeLinks("", "https://www.mediafire.com/file/ops98l93qtpu9js/")
                 disableButtons(4)
@@ -202,7 +201,7 @@ function changeSelection(elementID) {
             case "d11":
                 changeLinks("", "https://www.mediafire.com/file/8kk9gmx2u351101/")
                 disableButtons(4)
-                break;                                                                                                              
+                break;
         }
         selectedVariable = elementID
     }
@@ -248,12 +247,17 @@ function disableButtons(available) {
 }
 function changeTab(tabID, tabLetter, itemAmount, listText) {
     document.getElementById("boxText").innerHTML = listText
-    document.getElementById("tabOpti").style = null
-    document.getElementById("tabGames").style = null
-    document.getElementById("tabPrograms").style = null
-    document.getElementById("tabEmulators").style = null
+    document.getElementById("tabOpti").style.backgroundColor = null
+    document.getElementById("tabOpti").style.cursor = null
+    document.getElementById("tabGames").style.backgroundColor = null
+    document.getElementById("tabGames").style.cursor = null
+    document.getElementById("tabPrograms").style.backgroundColor = null
+    document.getElementById("tabPrograms").style.cursor = null
+    document.getElementById("tabEmulators").style.backgroundColor = null
+    document.getElementById("tabEmulators").style.cursor = null
     document.getElementById(tabID).style.backgroundColor = "#FFFFFF12"
     document.getElementById(tabID).style.cursor = "default"
+    document.getElementById(tabLetter + itemAmount).style.marginBottom = "11px"
     for (let i = 1; i <= prevItemAmount; i++) {
         document.getElementById(currentTab + i).style.display = "none"
     }
@@ -264,8 +268,6 @@ function changeTab(tabID, tabLetter, itemAmount, listText) {
     currentTab = tabLetter
     changeSelection(tabLetter + "1")
 }
-
-
 
 selectedVariable = "a1"
 currentTab = "a"
@@ -291,31 +293,35 @@ window.addEventListener("resize", compactModes);
 compactModes();
 
 function compactModes() {
-    if (window.innerHeight < 743) {
+    if (window.innerHeight < 743 || window.innerWidth < 1128) {
         document.getElementById("header").style.borderBottom = "none"
         document.getElementById("header").style.borderRight = "2px solid #00000040"
         document.getElementById("header").style.width = "296px"
         document.getElementById("header").style.height = "100%"
         document.getElementById("buttonContainer").style.display = "block"
         document.getElementById("buttonContainer").style.left = "78px"
+        document.getElementById("buttonContainer").style.left = "68px"
         document.getElementById("buttonContainer").style.transform = "none"
         document.getElementById("buttonContainer").style.marginTop = "96px"
-        document.getElementById("mainContainer").style.left = "calc(50% + calc(298px /2))"
+        document.getElementById("mainContainer").style.left = "calc(50% + 149px)"
         document.getElementById("socialButtonContainer").style.right = "auto"
         document.getElementById("socialButtonContainer").style.top = "auto"
         document.getElementById("socialButtonContainer").style.bottom = "20px"
         document.getElementById("socialButtonContainer").style.left = "84px"
+        document.getElementById("tabOpti").style.width = "180px"
+        document.getElementById("tabEmulators").style.width = "180px"
+        document.getElementById("tabGames").style.width = "180px"
+        document.getElementById("tabPrograms").style.width = "180px"
     } else {
         document.getElementById("header").style = null
         document.getElementById("buttonContainer").style = null
         document.getElementById("mainContainer").style.left = null
         document.getElementById("socialButtonContainer").style = null
     }
-
-    if (window.innerHeight < 599) {
-        document.getElementById("mainContainer").style.height = "479px"
-        document.getElementById("versionBox").style.height = "355px"
-        document.getElementById("listBox").style.height = "279px"
+    if (window.innerHeight < 583) {
+        document.getElementById("mainContainer").style.height = window.innerHeight + "px"
+        document.getElementById("versionBox").style.height = window.innerHeight - 127 + "px"
+        document.getElementById("listBox").style.height = window.innerHeight - 203 + "px"
     } else {
         document.getElementById("mainContainer").style.height = null
         document.getElementById("versionBox").style.height = null

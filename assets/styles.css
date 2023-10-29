@@ -10,6 +10,7 @@ body {
     font-weight: 500;
     line-height: normal;
     user-select: none;
+    overflow: hidden;
 }
 .backgroundHigh {
     background-image: url(backgroundHigh.webp);
@@ -51,9 +52,9 @@ body {
 .tabButtons {
     background-color: #00000000;
     color: #FFF;
-    top: 0px;
     width: 140px;
     height: 100%;
+    margin-bottom: 8px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 600;
@@ -147,7 +148,6 @@ body {
     color: #FFF;
     font-size: 16px;
     display: block;
-    transition: 0.1s ease;
 }
 .listElement:hover {
     background-color: #45454540;
@@ -177,7 +177,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.08s ease;
+    transition: width 0.1s ease;
 }
 
 .downloadJava {
