@@ -166,32 +166,40 @@ function changeSelection(elementID) {
             case "d2":
                 changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1166925656131645540/Dolphin_Lite_V3.5.7z")
                 disableButtons(4)
-                break;                
+                break; 
             case "d3":
+                changeLinks("", "https://www.mediafire.com/file/ops98l93qtpu9js/")
+                disableButtons(4)
+                break;				
+            case "d4":
                 changeLinks("", "https://www.mediafire.com/file/ebus0codydv7a01/")
                 disableButtons(4)
                 break;
-            case "d4":
+            case "d5":
                 changeLinks("", "https://www.mediafire.com/file/le2mlf2rtq0qksd/")
                 disableButtons(4)
                 break;      
-            case "d5":
+            case "d6":
                 changeLinks("", "https://www.mediafire.com/file/jeajc4wmbpmfi8d/")
                 disableButtons(4)
                 break;      
-            case "d6":
+            case "d7":
                 changeLinks("", "https://www.mediafire.com/file/rwfjkya21jxii3x")
                 disableButtons(4)
                 break;      
-            case "d7":
-                changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1131014766635257867/PPSSPP_LITE_V1.1.7z")
+            case "d8":
+                changeLinks("", "https://www.mediafire.com/file/xz6iz1k4twpkptt/")
                 disableButtons(4)
                 break;   
-            case "d8":
-                changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1114768795865722990/pSXFIN_V1.1.7z")
+            case "d9":
+                changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1131014766635257867/PPSSPP_LITE_V1.1.7z")
                 disableButtons(4)
                 break;      
-            case "d9":
+            case "d10":
+                changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1114768795865722990/pSXFIN_V1.1.7z")
+                disableButtons(4)
+                break;  				
+            case "d11":
                 changeLinks("", "https://www.mediafire.com/file/8kk9gmx2u351101/")
                 disableButtons(4)
                 break;                                                                                                              
@@ -268,7 +276,7 @@ document.getElementById("tabOpti").addEventListener("click", function() {
     changeTab("tabOpti", "a", 10, "Versiones")
 })
 document.getElementById("tabEmulators").addEventListener("click", function() {
-    changeTab("tabEmulators", "d", 9, "Emuladores optimizados")
+    changeTab("tabEmulators", "d", 11, "Emuladores optimizados")
 })
 document.getElementById("tabGames").addEventListener("click", function() {
     changeTab("tabGames", "b", 24, "Juegos optimizados")
