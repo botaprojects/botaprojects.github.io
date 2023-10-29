@@ -169,36 +169,32 @@ function changeSelection(elementID) {
             case "d3":
                 changeLinks("", "https://www.mediafire.com/file/ops98l93qtpu9js/")
                 disableButtons(4)
-                break;				
+                break;
             case "d4":
-                changeLinks("", "https://www.mediafire.com/file/ebus0codydv7a01/")
-                disableButtons(4)
+                changeLinks("https://www.mediafire.com/file/ebus0codydv7a01/", "https://www.mediafire.com/file/le2mlf2rtq0qksd/")
+                disableButtons(5, "v1.1", "v1.2")
                 break;
             case "d5":
-                changeLinks("", "https://www.mediafire.com/file/le2mlf2rtq0qksd/")
-                disableButtons(4)
-                break;      
-            case "d6":
                 changeLinks("", "https://www.mediafire.com/file/jeajc4wmbpmfi8d/")
                 disableButtons(4)
                 break;      
-            case "d7":
+            case "d6":
                 changeLinks("", "https://www.mediafire.com/file/rwfjkya21jxii3x")
                 disableButtons(4)
                 break;      
-            case "d8":
+            case "d7":
                 changeLinks("", "https://www.mediafire.com/file/xz6iz1k4twpkptt/")
                 disableButtons(4)
                 break;   
-            case "d9":
+            case "d8":
                 changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1131014766635257867/PPSSPP_LITE_V1.1.7z")
                 disableButtons(4)
                 break;      
-            case "d10":
+            case "d9":
                 changeLinks("", "https://cdn.discordapp.com/attachments/1065487041611186196/1114768795865722990/pSXFIN_V1.1.7z")
                 disableButtons(4)
                 break;  				
-            case "d11":
+            case "d10":
                 changeLinks("", "https://www.mediafire.com/file/8kk9gmx2u351101/")
                 disableButtons(4)
                 break;
@@ -213,7 +209,7 @@ function changeLinks(linkJava, linkBedrock) {
     document.getElementById("downloadJava").setAttribute("href", linkJava)
     document.getElementById("downloadBedrock").setAttribute("href", linkBedrock)
 }
-function disableButtons(available) {
+function disableButtons(available, textButton1, textButton2) {
     switch (available) {
         case 1:
             document.getElementById("downloadBedrock").style.display = "none"
@@ -234,14 +230,22 @@ function disableButtons(available) {
             document.getElementById("downloadJava").style.width = "190px"
             document.getElementById("downloadJava").style.left = "0px"
             document.getElementById("downloadJava").style.right = "auto"
-            document.getElementById("downloadBedrock").innerHTML = "Bedrock"
-            document.getElementById("boxText").innerHTML = "Versiones"
             break;
         case 4:
             document.getElementById("downloadBedrock").style.display = "flex"
             document.getElementById("downloadBedrock").style.width = "408px"
-            document.getElementById("downloadBedrock").innerHTML = "Descargar"
             document.getElementById("downloadJava").style.display = "none"
+            document.getElementById("downloadBedrock").innerHTML = "Descargar"
+            break;
+        case 5:
+            document.getElementById("downloadBedrock").style.display = "flex"
+            document.getElementById("downloadJava").style.display = "flex"
+            document.getElementById("downloadBedrock").style.width = "190px"
+            document.getElementById("downloadJava").style.width = "190px"
+            document.getElementById("downloadJava").style.left = "0px"
+            document.getElementById("downloadJava").style.right = "auto"
+            document.getElementById("downloadJava").innerHTML = textButton1
+            document.getElementById("downloadBedrock").innerHTML = textButton2
             break;
     }
 }
@@ -258,6 +262,9 @@ function changeTab(tabID, tabLetter, itemAmount, listText) {
     document.getElementById(tabID).style.backgroundColor = "#FFFFFF12"
     document.getElementById(tabID).style.cursor = "default"
     document.getElementById(tabLetter + itemAmount).style.marginBottom = "11px"
+    if (tabID === "tabOpti") {
+        document.getElementById("downloadBedrock").innerHTML = "Bedrock"
+    } else {document.getElementById("downloadBedrock").innerHTML = "Descargar"}
     for (let i = 1; i <= prevItemAmount; i++) {
         document.getElementById(currentTab + i).style.display = "none"
     }
@@ -272,13 +279,13 @@ function changeTab(tabID, tabLetter, itemAmount, listText) {
 selectedVariable = "a1"
 currentTab = "a"
 prevItemAmount = 10
-changeTab("tabOpti", "a", 10)
+changeTab("tabOpti", "a", 10, "Versiones")
 
 document.getElementById("tabOpti").addEventListener("click", function() {
     changeTab("tabOpti", "a", 10, "Versiones")
 })
 document.getElementById("tabEmulators").addEventListener("click", function() {
-    changeTab("tabEmulators", "d", 11, "Emuladores optimizados")
+    changeTab("tabEmulators", "d", 10, "Emuladores optimizados")
 })
 document.getElementById("tabGames").addEventListener("click", function() {
     changeTab("tabGames", "b", 24, "Juegos optimizados")
