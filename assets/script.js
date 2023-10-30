@@ -97,46 +97,54 @@ function changeSelection(elementID) {
                 disableButtons(4)
                 break;
             case "b14":
-                changeLinks("", "https://www.mediafire.com/file/fs7bpb5l5zyv5ro/")
+                changeLinks("", "https://www.mediafire.com/file/2mjvbdz0illke17/")
                 disableButtons(4)
                 break;
             case "b15":
-                changeLinks("", "https://drive.google.com/file/d/1M42mZ3yXoCnhZ7cVYkl0ABi_5UsYZbcS/view?usp=share_link")
+                changeLinks("", "https://www.mediafire.com/file/fs7bpb5l5zyv5ro")
                 disableButtons(4)
                 break;
             case "b16":
+                changeLinks("", "https://drive.google.com/file/d/1M42mZ3yXoCnhZ7cVYkl0ABi_5UsYZbcS/view?usp=share_link")
+                disableButtons(4)
+                break;				
+            case "b17":
                 changeLinks("", "https://www.mediafire.com/file/t8po4mzanx9hwol")
                 disableButtons(4)
                 break;
-            case "b17":
+            case "b18":
                 changeLinks("", "https://cdn.discordapp.com/attachments/1065489877497548861/1128792447783284928/Plants_vs_Zombies.7z")
                 disableButtons(4)
                 break;
-            case "b18":
+            case "b19":
                 changeLinks("", "https://www.mediafire.com/file/7vjv1m3cyt1iwvl/")
                 disableButtons(4)
                 break;
-            case "b19":
-                changeLinks("", "https://www.mediafire.com/file/li3ftumyprfpcfy")
-                disableButtons(4)
-                break;
             case "b20":
-                changeLinks("", "https://cdn.discordapp.com/attachments/1065489877497548861/1167666961245798420/Subway_Surfers.7z")
+                changeLinks("", "https://www.mediafire.com/file/v7gzqg5mlm6cml5")
                 disableButtons(4)
                 break;
             case "b21":
-                changeLinks("", "https://cdn.discordapp.com/attachments/1065489877497548861/1113672795302412338/Super_Mario_64.zip")
+                changeLinks("", "https://www.mediafire.com/file/li3ftumyprfpcfy")
                 disableButtons(4)
-                break;
+                break;				
             case "b22":
-                changeLinks("", "https://www.mediafire.com/file/2rzvfdy2nossuw0")
+                changeLinks("", "https://cdn.discordapp.com/attachments/1065489877497548861/1167666961245798420/Subway_Surfers.7z")
                 disableButtons(4)
                 break;
             case "b23":
-                changeLinks("", "https://www.mediafire.com/file/umcmdzestj6bthp")
+                changeLinks("", "https://cdn.discordapp.com/attachments/1065489877497548861/1113672795302412338/Super_Mario_64.zip")
                 disableButtons(4)
                 break;
             case "b24":
+                changeLinks("", "https://www.mediafire.com/file/2rzvfdy2nossuw0")
+                disableButtons(4)
+                break;
+            case "b25":
+                changeLinks("", "https://www.mediafire.com/file/umcmdzestj6bthp")
+                disableButtons(4)
+                break;
+            case "b26":
                 changeLinks("", "https://www.mediafire.com/file/76ff84p7904jygq")
                 disableButtons(4)
                 break;
@@ -289,7 +297,7 @@ document.getElementById("tabEmulators").addEventListener("click", function() {
     changeTab("tabEmulators", "d", 10, "Emuladores optimizados")
 })
 document.getElementById("tabGames").addEventListener("click", function() {
-    changeTab("tabGames", "b", 24, "Juegos optimizados")
+    changeTab("tabGames", "b", 26, "Juegos optimizados")
 })
 document.getElementById("tabPrograms").addEventListener("click", function() {
     changeTab("tabPrograms", "c", 4, "Programas optimizados")
