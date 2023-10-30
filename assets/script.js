@@ -264,6 +264,7 @@ function changeTab(tabID, tabLetter, itemAmount, listText) {
     document.getElementById(tabLetter + itemAmount).style.marginBottom = "11px"
     if (tabID === "tabOpti") {
         document.getElementById("downloadBedrock").innerHTML = "Bedrock"
+        document.getElementById("downloadJava").innerHTML = "Java"
     } else {document.getElementById("downloadBedrock").innerHTML = "Descargar"}
     for (let i = 1; i <= prevItemAmount; i++) {
         document.getElementById(currentTab + i).style.display = "none"
