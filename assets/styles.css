@@ -135,9 +135,10 @@ body {
 /* This is separated so that the styles don't get overrided by the transparent scrollbar */
 .entryContainer {
     width: 105%;
-    height: calc(100% - 16px);
-    padding-top: 4px;
-    padding-bottom: 11px;
+    height: calc(100% - 15px);
+    margin-top: 2px;
+    padding-top: 2px;
+    padding-bottom: 9px;
     overflow: auto;
     scrollbar-color: transparent transparent;
 }
