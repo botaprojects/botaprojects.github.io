@@ -81,6 +81,7 @@ function changeTab(id) {
     document.getElementById("tabSubtitle").innerHTML = elementsData[tab.selected].subtitle
 
     updateEntries()
+    entry.selected = "e1"
     selectEntry("e1")
 }
 
