@@ -170,7 +170,7 @@ function compactMode() {
     if (window.innerHeight < 583) {
         document.getElementById("mainContainer").style.height = window.innerHeight + "px"
         document.getElementById("mainBox").style.height = window.innerHeight - 127 + "px"
-        document.getElementById("listBox").style.height = window.innerHeight - 203 + "px"
+        document.getElementById("listBox").style.height = window.innerHeight - 199 + "px"
     } else {
         document.getElementById("mainContainer").style.height = null
         document.getElementById("mainBox").style.height = null
