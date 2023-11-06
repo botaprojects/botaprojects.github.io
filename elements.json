@@ -8,7 +8,10 @@
 },
 "e2": {
 "name": "Dolphin",
-"l1": "https://cdn.discordapp.com/attachments/1065487041611186196/1166925656131645540/Dolphin_Lite_V3.5.7z"
+"l1": "https://cdn.discordapp.com/attachments/1065487041611186196/1107430701348966540/Dolphin_Lite_V4.0.7z",
+"l2": "https://cdn.discordapp.com/attachments/1065487041611186196/1166925656131645540/Dolphin_Lite_V3.5.7z",
+"b1": "v3.5",
+"b2": "v4.0"
 },
 "e3": {
 "name": "DeSmuME",
@@ -55,7 +58,10 @@
 },
 "e2": {
 "name": "Counter Strike 1.6",
-"l1": "https://www.mediafire.com/file/ag28b7eumf10go2"
+"l1": "https://www.mediafire.com/file/ag28b7eumf10go2",
+"l2": "https://drive.google.com/file/d/1IqSd8aLYWLPzoONOkgibyd1yT8KKYtEm/view?usp=share_link",
+"b1": "OptiClient",
+"b2": "Xash3D"
 },
 "e3": {
 "name": "Counter Strike 2",
@@ -63,7 +69,10 @@
 },
 "e4": {
 "name": "Counter Strike: Global Offensive",
-"l1": "https://drive.google.com/file/d/1BvhlN4H1ND87_HlpCjSrwZlDz8NlQctQ/view"
+"l1": "https://drive.google.com/file/d/1BBQ3gUfy2KfRUn21P5uUe5_Qbher0DbO/view"
+"l2": "https://drive.google.com/file/d/1BvhlN4H1ND87_HlpCjSrwZlDz8NlQctQ/view"
+"b1": "Alpha",
+"b2": "Beta"
 },
 "e5": {
 "name": "Craftsman",
@@ -90,7 +99,10 @@
 },
 "e10": {
 "name": "GTA: San Andreas",
-"l1": "https://archive.org/download/opti-juegos-projects/GTA%20San%20Andreas%20OptiProjects.iso"
+"l1": "https://archive.org/download/opti-juegos-projects/GTA%20San%20Andreas%20OptiProjects.iso",
+"l2": "https://www.mediafire.com/file/5zx4z41hqwmb5aw",
+"b1": "Repack",
+"b2": "Canaima MOD"
 },
 "e11": {
 "name": "GTA: IV",
@@ -163,6 +175,10 @@
 "name": "Super Mario 64 nx",
 "l1": "https://www.mediafire.com/file/2rzvfdy2nossuw0"
 },
+"e27": {
+"name": "Syobon Action 3D",
+"l1": "https://www.mediafire.com/file/q73d6mgmhi7nmmr"
+},
 "e28": {
 "name": "Terraria",
 "l1": "https://www.mediafire.com/file/umcmdzestj6bthp"
@@ -232,6 +248,10 @@
 "l2": "https://drive.google.com/file/d/1Yg6TZy0q3eypCk4rl0VTOyyAtQx7rE7y/view",
 "b1": "Bedrock",
 "b2": "Java"
+},
+"e11": {
+"name": "OptiCraft Server Creator",
+"l1": "https://www.mediafire.com/file/nyqz3rrf2o7vzwl"
 }
 },
 "t4": {
