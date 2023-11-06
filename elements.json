@@ -76,6 +76,9 @@
 "e7": {
 "name": "Friday Night Funkin",
 "l1": "https://github.com/OptiJuegos/Friday-Night-Funkin-Lite/releases/download/v1.1/Friday.Night.Funkin.Lite.zip"
+"l2": "https://optijuegos.github.io/Friday-Night-Funkin-Lite/",
+"b1": "Descargar",
+"b2": "Web"
 },
 "e8": {
 "name": "Geometry Dash",
@@ -135,7 +138,10 @@
 },
 "e22": {
 "name": "Subway Surfers",
-"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1167666961245798420/Subway_Surfers.7z"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1167666961245798420/Subway_Surfers.7z",
+"l2": "https://optijuegos.github.io/subway-surfers-web/",
+"b1": "Descargar",
+"b2": "Web"
 },
 "e23": {
 "name": "Super Mario 64",
