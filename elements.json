@@ -220,18 +220,21 @@
         "title": "Programas",
         "subtitle": "Programas optimizados",
         "e1": {
-            "name": "LighterOBS",
-            "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1165862996849999922/LighterOBS_No_Browser_By_OptiJuegos.7z"
-        },
+            "name": "Game Booster",
+            "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1079130749350981692/Game_Booster.zip"
         "e2": {
+            "name": "LighterOBS",
+            "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1165862996849999922/LighterOBS_No_Browser_By_OptiJuegos.7z"			
+        },
+        "e3": {
             "name": "OptiChromium",
             "l1": "https://www.mediafire.com/file/tefl9904n0gnx4l/"
         },
-        "e3": {
+        "e4": {
             "name": "Optimizar PC",
             "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167912564848595034/Optimizar_PC_V5.4.zip"
         },
-        "e4": {
+        "e5": {
             "name": "RobLauncher",
             "l1": "https://cdn.discordapp.com/attachments/1153879925682614302/1154971396858982450/RobLauncher_Release_V1.4.zip",
             "l2": "https://cdn.discordapp.com/attachments/1153879925682614302/1169403958285058180/RobLauncher_Release_V1.5_BETA.zip",
