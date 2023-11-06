@@ -109,53 +109,61 @@
 "l1": "https://www.mediafire.com/file/2mjvbdz0illke17/"
 },
 "e15": {
+"name": "Minecraft BETA 1.7.3 Portable",
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1170927984190967961/Minecraft_BETA_1.7.3.7z"
+},
+"e16": {
+"name": "Minecraft 1.5.2 Portable",
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1113251823571177535/Minecraft_1.5.2_Portable.7z"
+},
+"e17": {
 "name": "Minecraft: Legacy Edition",
 "l1": "https://www.mediafire.com/file/fs7bpb5l5zyv5ro"
 },
-"e16": {
+"e18": {
 "name": "PES 6",
 "l1": "https://drive.google.com/file/d/1M42mZ3yXoCnhZ7cVYkl0ABi_5UsYZbcS/view?usp=share_link"
 },
-"e17": {
+"e19": {
 "name": "Pepsiman Remastered",
 "l1": "https://www.mediafire.com/file/t8po4mzanx9hwol"
 },
-"e18": {
+"e20": {
 "name": "Plants vs Zombies",
 "l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1128792447783284928/Plants_vs_Zombies.7z"
 },
-"e19": {
+"e21": {
 "name": "Poly Bridge",
 "l1": "https://www.mediafire.com/file/7vjv1m3cyt1iwvl/"
 },
-"e20": {
+"e22": {
 "name": "Portal",
 "l1": "https://www.mediafire.com/file/v7gzqg5mlm6cml5"
 },
-"e21": {
+"e23": {
 "name": "Sonic 1",
 "l1": "https://www.mediafire.com/file/li3ftumyprfpcfy"
 },
-"e22": {
+"e24": {
 "name": "Subway Surfers",
 "l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1167666961245798420/Subway_Surfers.7z",
 "l2": "https://optijuegos.github.io/subway-surfers-web/",
 "b1": "Descargar",
 "b2": "Web"
 },
-"e23": {
+"e25": {
 "name": "Super Mario 64",
 "l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1113672795302412338/Super_Mario_64.zip"
 },
-"e24": {
+"e26": {
 "name": "Super Mario 64 nx",
 "l1": "https://www.mediafire.com/file/2rzvfdy2nossuw0"
 },
-"e25": {
+"e27": {
 "name": "Terraria",
 "l1": "https://www.mediafire.com/file/umcmdzestj6bthp"
 },
-"e26": {
+"e28": {
 "name": "World's Hardest Game",
 "l1": "https://www.mediafire.com/file/76ff84p7904jygq"
 }
@@ -226,24 +234,59 @@
 "title": "Programas",
 "subtitle": "Programas optimizados",
 "e1": {
+"name": "Bandicam Portable",
+"l1": "https://www.mediafire.com/file/eu3gfmfvtfardzj/"
+},
+"e2": {
+"name": "Daemon Tools Lite Portable",
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1138253045352910978/Daemon_Tools_Lite_Portable.7z"
+},
+"e3": {
+"name": "Driver Booster Portable",
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167664981077131274/DriverBooster.7z"
+},
+"e4": {
 "name": "Game Booster",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1079130749350981692/Game_Booster.zip"
-},			
-"e2": {
+},
+"e5": {
+"name": "Instalador Visual C++ - DirectX",
+"l1": "https://www.mediafire.com/file/2bjxzf59duumsr5/"
+},
+"e6": {
+"name": "Java OpenGL Mesa",
+"l1": "https://www.mediafire.com/file/cws46wp4n5fmiw4"			
+},
+"e7": {
 "name": "LighterOBS",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1165862996849999922/LighterOBS_No_Browser_By_OptiJuegos.7z"			
 },
-"e3": {
-"name": "OptiChromium",
-"l1": "https://www.mediafire.com/file/tefl9904n0gnx4l/"
+"e8": {
+"name": "Limpiar Espacio",
+"l1": "https://www.mediafire.com/file/h8w0ismnrpwm8oe"			
 },
-"e4": {
+"e9": {
+"name": "MSI Afterburner Portable",
+"l1": "https://www.mediafire.com/file/k8eqyj99bwlao4o"
+},
+"e10": {
+"name": "OptiChromium",
+"l1": "https://www.mediafire.com/file/tefl9904n0gnx4l"
+},
+"e11": {
+"name": "OptiPanas Video Compressor",
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1152411969412931584/OptiPanas_Video_Compressor_V2.7z"
+},
+"e12": {
 "name": "Optimizar PC",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167912564848595034/Optimizar_PC_V5.4.zip"
 },
-"e5": {
+"e13": {
 "name": "RobLauncher",
 "l1": "https://cdn.discordapp.com/attachments/1153879925682614302/1169696699313299456/RobLauncher_Release_V1.5.zip"
+"e14": {
+"name": "Youtube LITE",
+"l1": "https://www.mediafire.com/file/vmr3udh4xyonqak"
 }
 },
 "t5": {
