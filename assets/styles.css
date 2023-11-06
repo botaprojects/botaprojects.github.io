@@ -16,6 +16,16 @@ body {
     user-select: none;
     overflow: hidden;
 }
+.backgroundHigh {
+    background-image: url(backgroundHigh.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 
 
 /* ------------------------ Header ------------------------ */
@@ -118,17 +128,16 @@ body {
 
 .listBox {
     width: 408px;
-    height: 385px;
+    height: 381px;
     margin: 16px;
     margin-top: 12px;
 }
 /* This is separated so that the styles don't get overrided by the transparent scrollbar */
 .entryContainer {
     width: 105%;
-    height: calc(100% - 15px);
-    margin-top: 2px;
-    padding-top: 2px;
-    padding-bottom: 9px;
+    height: calc(100% - 16px);
+    padding-top: 4px;
+    padding-bottom: 11px;
     overflow: auto;
     scrollbar-color: transparent transparent;
 }
