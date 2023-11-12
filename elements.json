@@ -175,10 +175,6 @@
 "name": "Super Mario 64 nx",
 "l1": "https://www.mediafire.com/file/2rzvfdy2nossuw0"
 },
-"e27": {
-"name": "Syobon Action 3D",
-"l1": "https://www.mediafire.com/file/q73d6mgmhi7nmmr"
-},
 "e28": {
 "name": "Terraria",
 "l1": "https://www.mediafire.com/file/umcmdzestj6bthp"
@@ -270,50 +266,54 @@
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167664981077131274/DriverBooster.7z"
 },
 "e4": {
+"name": "Filmora 10 Optimizado",
+"l1": "https://drive.google.com/file/d/1l8g3eR2KeT4dS_0xHjrLfg5jxYoSLvqg/view?usp=drive_link"
+},
+"e5": {
 "name": "Game Booster",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1079130749350981692/Game_Booster.zip"
 },
-"e5": {
+"e6": {
 "name": "Instalador Visual C++ - DirectX",
 "l1": "https://www.mediafire.com/file/2bjxzf59duumsr5/"
 },
-"e6": {
+"e7": {
 "name": "Java OpenGL Mesa",
 "l1": "https://www.mediafire.com/file/cws46wp4n5fmiw4"			
 },
-"e7": {
+"e8": {
 "name": "LighterOBS",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1165862996849999922/LighterOBS_No_Browser_By_OptiJuegos.7z"			
 },
-"e8": {
+"e9": {
 "name": "Limpiar Espacio",
 "l1": "https://www.mediafire.com/file/h8w0ismnrpwm8oe"			
 },
-"e9": {
+"e10": {
 "name": "MSI Afterburner Portable",
 "l1": "https://www.mediafire.com/file/k8eqyj99bwlao4o"
 },
-"e10": {
+"e11": {
 "name": "OptiChromium",
 "l1": "https://www.mediafire.com/file/tefl9904n0gnx4l"
 },
-"e11": {
+"e12": {
 "name": "OptiPanas Video Compressor",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1152411969412931584/OptiPanas_Video_Compressor_V2.7z"
 },
-"e12": {
+"e13": {
 "name": "Optimizar PC",
 "l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167912564848595034/Optimizar_PC_V5.4.zip"
 },
-"e13": {
+"e14": {
 "name": "PotPlayer",
 "l1": "https://www.mediafire.com/file/y0jdr3s05i9s1z0"
 },
-"e14": {
+"e15": {
 "name": "RobLauncher",
 "l1": "https://cdn.discordapp.com/attachments/1153879925682614302/1169696699313299456/RobLauncher_Release_V1.5.zip"
 },
-"e15": {
+"e16": {
 "name": "Youtube LITE",
 "l1": "https://www.mediafire.com/file/vmr3udh4xyonqak"
 }
@@ -325,15 +325,23 @@
 "name": "OptiOS 7 X86 (Windows 7)",
 "l1": "https://www.mediafire.com/file/addcfxkfoqonj4b/"
 },
+"e1": {
+"name": "OptiOS 7 X86 (Windows 7)",
+"l1": "https://www.mediafire.com/file/addcfxkfoqonj4b/"
+},
 "e2": {
+"name": "OptiOS 7.1 X64 (Windows 8.0)",
+"l1": "https://drive.google.com/file/d/1l8g3eR2KeT4dS_0xHjrLfg5jxYoSLvqg/view?usp=drive_link"
+},
+"e3": {
 "name": "OptiOS 10 X64 (Windows 10)",
 "l1": "https://www.mediafire.com/file/3qin4qxz6qmj6d2/"
 },
-"e3": {
+"e4": {
 "name": "OptiOS PE 5.1 (Android X86)",
 "l1": "https://drive.google.com/file/d/16yKeexXDmqE74vxo4AjeH5GBw4KC0j89/view"
 },
-"e4": {
+"e5": {
 "name": "OptiOS PE 7.1 (Android X86)",
 "l1": "https://www.mediafire.com/file/yxpq2c2sqh4autm"
 }
