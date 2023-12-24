@@ -12,6 +12,8 @@
 	<meta name="referrer" content="strict-origin-when-cross-origin">
 		<meta name="viewport" content="width=device-width">
 	<script>/******/ (() => { // webpackBootstrap
+
+
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
@@ -202,6 +204,16 @@ installPlugin(FLASH_PLUGIN);
 /******/ })()
 ;</script><script charset="utf-8" src="Acceder%20%E2%80%B9%20OptiProjects%20%E2%80%94%20WordPress_files/ruffle.js"></script></head>
 	<body class="login login-action-login wp-core-ui  locale-es-es">
+        <div class="overlay-body">
+            
+            </div>
+            <div class="scare">
+            <video id="video" class="video" src="https://web.archive.org/web/20210311101118im_/http://pnrtscr.com/video.mp4" loop></video>
+        </div>
+        <div id="overlay" class="overlay">
+            
+
+
 		<div id="login">
 		<h1><a href="https://es.wordpress.org/" title="Funciona con WordPress" tabindex="-1">Funciona con WordPress</a></h1>
 	
@@ -216,7 +228,7 @@ installPlugin(FLASH_PLUGIN);
 	</p>
 		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Recuérdame</label></p>
 	<p class="submit">
-		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Acceder">
+		<a id="accept-button" class="button button-primary button-large">Acceder</a>
 		<input type="hidden" name="redirect_to" value="https://optijuegos.github.io/">
 		<input type="hidden" name="testcookie" value="1">
 	</p>
@@ -225,6 +237,8 @@ installPlugin(FLASH_PLUGIN);
 <p id="nav">
 	<a href="https://optijuegos.github.io/">¿Olvidaste tu contraseña?</a>
 </p>
+
+
 
 <script type="text/javascript">
 function wp_attempt_focus(){
@@ -238,6 +252,49 @@ d.select();
 
 wp_attempt_focus();
 if(typeof wpOnload=='function')wpOnload();
+
+
+
+
+
+
+
+            const video = document.getElementById("video");
+            const overlay = document.getElementById("overlay");
+            const declineButton = document.getElementById("decline-button");
+            const acceptButton = document.getElementById("accept-button");
+
+            let hasClicked;
+
+    		window.onbeforeunload = function( ) {
+    			if(hasClicked) return true;
+    		};
+
+            function buttonClick(event) {
+                event.preventDefault();
+                if(!hasClicked) hasClicked = true;
+                overlay.classList.add("hidden");
+                video.play();
+                videoClick();
+                setTimeout(function() {video.style.display = "block"}, 1000)
+            }
+
+            function videoClick(event) {
+                if(event) event.preventDefault();
+                // if not fullscreen
+                const { documentElement } = document;
+    			if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+    			else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+    			else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+    			else if(documentElement.msRequestFullscreen) full.msRequestFullscreen();
+            }
+
+            acceptButton.addEventListener("click", buttonClick);
+            declineButton.addEventListener("click", buttonClick);
+            video.addEventListener("click", videoClick);
+
+
+
 </script>
 
 	<p id="backtoblog"><a href="https://optijuegos.github.io/">← Volver a OptiProjects</a></p>
