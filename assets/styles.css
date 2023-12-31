@@ -1,5 +1,5 @@
 :root {
-    --tabWidth: 140px;
+    --tabWidth: 135px;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 
 /* ------------------------ Header ------------------------ */
 
-.header {
+#header {
     background-color: #14141480;
     width: 100%;
     height: 72px;
@@ -48,7 +48,7 @@ body {
     position: absolute;
 }
 
-.tabContainer {
+#tabContainer {
     height: 38px;
     margin-top: 17px;
     position: absolute;
@@ -61,6 +61,8 @@ body {
     color: #FFF;
     width: var(--tabWidth);
     height: 100%;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
     margin-bottom: 8px;
     border-radius: 4px;
     font-size: 18px;
@@ -69,10 +71,14 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.08s ease-out;
+}
+.tabButton:hover {
+    background-color: rgba(255, 255, 255, 0.025);
 }
 
-.socialContainer {
-    width: 128px;
+#socialContainer {
+    width: 168px;
     height: 32px;
     top: 20px;
     right: 16px;
@@ -84,13 +90,20 @@ body {
     background-position: center;
     width: 50%;
     height: 100%;
+    transition: 0.1s ease-out;
+}
+.socialButton:hover {
+    filter: brightness(80%);
+}
+.socialButton:active {
+    filter: brightness(70%);
 }
 
 
 
 /* ------------------------ Main window ------------------------ */
 
-.mainContainer {
+#mainContainer {
     width: 440px;
     height: 583px;
     top: 50%;
@@ -135,15 +148,35 @@ body {
 /* This is separated so that the styles don't get overrided by the transparent scrollbar */
 .entryContainer {
     width: 105%;
-    height: calc(100% - 16px);
-    padding-top: 4px;
-    padding-bottom: 11px;
+    height: calc(100% - 15px);
+    margin-top: 2px;
+    padding-top: 2px;
+    padding-bottom: 9px;
     overflow: auto;
     scrollbar-color: transparent transparent;
 }
-.entryContainer::-webkit-scrollbar {
+#entryContainer::-webkit-scrollbar {
     width: 0px;
 }
+
+
+.textContainer {
+    display: none;
+    width: 95%;
+    color: #FFF;
+    padding-left: 12px;
+    padding-top: 5px;
+    user-select: text;
+    padding-bottom: 6px;
+}
+a[link] {
+    text-decoration: underline;
+    color: #00847DC9;
+}
+a[link]:hover {
+    color: #00847E;
+}
+
 
 .listEntry {
     background-color: #00000000;
@@ -158,6 +191,7 @@ body {
     color: #FFF;
     font-size: 16px;
     display: block;
+    transition: 0.05s ease-out;
 }
 .listEntry:hover {
     background-color: #45454540;
@@ -172,7 +206,7 @@ body {
 .downloadButton {
     color: #FFF;
     bottom: 0px;
-    width: 190px;
+    width: 170px;
     height: 36px;
     margin: 16px;
     position: absolute;
@@ -185,7 +219,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: width 0.1s ease;
+    transition: width 0.1s ease, background-color 0.05s ease, opacity 0.2s ease;
 }
 
 .download1 {
@@ -193,21 +227,37 @@ body {
     right: 0px;
 }
 .download1:hover {
-    background-color: #00726c;
+    background-color: #00847E90;
 }
 .download1:active {
-    background-color: #005e59;
+    background-color: #00847E50;
 }
 
 .download2 {
     background-color: #2F4342;
-    left: 0px;
+    left: 52px;
 }
 .download2:hover {
-    background-color: #263636;
+    background-color: #2F434290;
 }
 .download2:active {
-    background-color: #1e2b2b;
+    background-color: #2F434250;
+}
+
+.info {
+    background-color: #FFFFFF0D;
+    background-image: url(info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    left: 0px;
+    transition: 0.2s ease;
+}
+.info:hover {
+    background-color: #FFFFFF13;
+}
+.info:active {
+    background-color: #FFFFFF1A;
 }
 
 

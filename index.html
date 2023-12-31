@@ -11,20 +11,22 @@
 
     <div src="assets/backgroundHigh.webp" class="backgroundHigh"></div>
 
-    <div class="header" id="header" style="display: none;">
+    <div id="header" style="display: none;">
         <img class="logo" draggable=false src="assets/logo.png">
-        <div class="tabContainer" id="tabContainer"></div>
-        <div class="socialContainer" id="socialContainer">
+        <div id="tabContainer"></div>
+        <div id="socialContainer">
             <a class="socialButton" href="https://www.youtube.com/@OptiJogos" style="background-image: url(assets/youtube.svg)" draggable=false></a>
             <a class="socialButton" href="https://discord.gg/AyUPX8srwD" style="background-image: url(assets/discord.svg)" draggable=false></a>
+            <a class="socialButton" href="https://cafecito.app/optijuegos" style="background-image: url(assets/kofi.svg)" draggable="false"></a>
         </div>
     </div>
 
-    <div class="mainContainer" id="mainContainer" style="display: none;">
+    <div id="mainContainer" style="display: none;">
         <div class="box mainBox" id="mainBox">
-            <img class="icon" draggable=false src="assets/list.svg">
+            <img id="listIcon" class="icon" draggable=false src="assets/list.svg">
             <span class="boxLabel" id="tabSubtitle"></span>
             <div class="box listBox" id="listBox">
+                <div class="entryContainer textContainer" id="textContainer"></div>
                 <div class="entryContainer" id="entryContainer"></div>
             </div>
         </div>
@@ -32,6 +34,7 @@
         <div class="box downloadBox">
             <img class="icon" draggable=false src="assets/download.svg">
             <span class="boxLabel">Descargar</span>
+            <a class="downloadButton info" draggable="false" id="info"></a>
             <a class="downloadButton download2" draggable=false id="download2" href=""></a>
             <a class="downloadButton download1" draggable=false id="download1" href=""></a>
         </div>

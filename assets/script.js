@@ -1,11 +1,11 @@
-document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando archivo JSON..."
+document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json..."
 fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/elements.json")
     .then(response => response.json())
     .then(data => {
         elementsData = data
-        document.getElementById("loading").style.display = "none"
         document.getElementById("header").style.display = "block"
         document.getElementById("mainContainer").style.display = "block"
+        informationData = {}
         main()
     }
 )
@@ -16,12 +16,26 @@ fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/el
 // I don't know if it's efficient, but it's definetly easy and doesn't make the code any more complex
 function main() {
 
+// ----------------- Downloading further info ----------------- //
+
+document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Cargando information.json..."
+fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/information.json")
+    .then(response => response.json())
+    .then(data => {
+        informationData = data
+        document.getElementById("loading").style.display = "none"
+        updateButtons()
+    }
+)
+
+
+
 // ------------------------ Defaults ------------------------ //
 
 tab = {}
 tab.selected = "t3"
 entry = {}
-entry.selected = "e1"
+infoMenuOpen = false
 
 window.addEventListener("resize", compactMode)
 
@@ -63,7 +77,64 @@ document.getElementById("entryContainer").addEventListener("mousedown", function
     }
 })
 
+// Event listeners to show the information of the selected entry
+document.getElementById("info").addEventListener("mousedown", function(event) {
+    if (event.button === 0) {
+        infoMenu()
+    }
+})
+
 selectEntry(entry.selected)
+
+
+
+// ------------------------ Keyboard navigation ------------------------ //
+
+document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey) {
+        switch (event.code) {
+            case "ArrowUp":
+                if (entry.selectedInt > 1) {
+                    entry.selectedInt -= 1
+                    selectEntry("e" + entry.selectedInt, true)
+                }
+                break;
+            case "ArrowDown":
+                if (entry.selectedInt < entry.amount) {
+                    entry.selectedInt += 1
+                    selectEntry("e" + entry.selectedInt, true)
+                }
+                break;
+            case "ArrowRight":
+                if (tab.selectedInt < tab.amount) {
+                    tab.selectedInt += 1
+                    changeTab("t" + tab.selectedInt)
+                }
+                break;
+            case "ArrowLeft":
+                if (tab.selectedInt > 1) {
+                    tab.selectedInt -= 1
+                    changeTab("t" + tab.selectedInt)
+                }
+                break;
+        }
+    }
+
+    // I had to put this outside the Switch statement
+    if (event.ctrlKey && event.key === "Enter") {
+        if (elementsData[tab.selected][entry.selected].l2 !== undefined) {
+            window.location.href = elementsData[tab.selected][entry.selected].l2
+        }
+    } else if (event.code === "Enter") {
+        window.location.href = elementsData[tab.selected][entry.selected].l1
+    }
+
+    if (event.code === "Backspace") {
+        if (document.getElementById("info").style.opacity !== "0") {
+            infoMenu()
+        }
+    }
+})
 
 
 
@@ -74,11 +145,20 @@ function changeTab(id) {
     document.getElementById(tab.selected).style.backgroundColor = null
     document.getElementById(tab.selected).style.cursor = null
     tab.selected = id
-    document.getElementById(tab.selected).style.backgroundColor = "#FFFFFF12"
+    document.getElementById(tab.selected).style.backgroundColor = "rgba(255, 255, 255, 0.07)"
     document.getElementById(tab.selected).style.cursor = "default"
+
+    // This is used for keyboard navigation
+    tab.selectedInt = parseInt(tab.selected.slice(1))
 
     // Label/Subtitle of tab
     document.getElementById("tabSubtitle").innerHTML = elementsData[tab.selected].subtitle
+
+    infoMenuOpen = true
+    infoMenu()
+
+    // Scrolls back to top
+    document.getElementById("entryContainer").scrollTo({top: 0})
 
     updateEntries()
     entry.selected = "e1"
@@ -107,13 +187,25 @@ function updateEntries() {
 
 
 // Change selected entry
-function selectEntry(id) {
+function selectEntry(id, keyboardNavigation) {
     document.getElementById(entry.selected).style = null
     entry.selected = id
     document.getElementById(entry.selected).style.backgroundColor = "#454545"
 
+    // This is used for keyboard navigation
+    entry.selectedInt = parseInt(entry.selected.slice(1))
+
+    if (keyboardNavigation) {
+        if (entry.selectedInt > 1) {
+            document.getElementById(entry.selected).scrollIntoView({block: "start", behavior: "smooth"})
+        } else {
+            document.getElementById("entryContainer").scrollTo({top: 0, behavior: "smooth"})
+        }
+    }
+
     updateButtons()
 }
+
 
 
 // Update buttons label and links
@@ -129,14 +221,57 @@ function updateButtons() {
         document.getElementById("download1").innerHTML = elementsData[tab.selected][entry.selected].b1
     }
 
+    // Checks if there is extra information from information.json, and if so, it enables the information button
+    if (informationData[tab.selected] === undefined) {
+        document.getElementById("info").style.opacity = "0"
+        fullButtonWidth = "408px"
+        splitButtonWidth = "196px"
+        document.getElementById("download2").style.left = "0px"
+    } else if (informationData[tab.selected][entry.selected] === undefined) {
+        document.getElementById("info").style.opacity = "0"
+        fullButtonWidth = "408px"
+        splitButtonWidth = "196px"
+        document.getElementById("download2").style.left = "0px"
+    } else {
+        document.getElementById("info").style.opacity = null
+        fullButtonWidth = "356px"
+        splitButtonWidth = "170px"
+        document.getElementById("download2").style.left = "52px"
+    }
+
     // Checks if there is a second link, and if so, it enables the second button
     if (elementsData[tab.selected][entry.selected].l2 === undefined) {
-        document.getElementById("download1").style.width = "408px"
+        document.getElementById("download1").style.width = fullButtonWidth
+        document.getElementById("download2").removeAttribute("href")
+        document.getElementById("download2").style.opacity = "0"
     } else {
         document.getElementById("download2").style.display = null
-        document.getElementById("download1").style.width = null
+        document.getElementById("download1").style.width = splitButtonWidth
+        document.getElementById("download2").style.width = splitButtonWidth
         document.getElementById("download2").setAttribute("href", elementsData[tab.selected][entry.selected].l2)
         document.getElementById("download2").innerHTML = elementsData[tab.selected][entry.selected].b2
+        document.getElementById("download2").style.opacity = null
+    }
+}
+
+
+// Open Information/Help menu
+function infoMenu() {
+    if (infoMenuOpen) {
+        infoMenuOpen = false
+        document.getElementById("entryContainer").style.display = null
+        document.getElementById("textContainer").style.display = null
+        document.getElementById("info").style.backgroundImage = null
+        document.getElementById("listIcon").src = "assets/list.svg"
+        document.getElementById("tabSubtitle").innerHTML = elementsData[tab.selected].subtitle
+    } else {
+        infoMenuOpen = true
+        document.getElementById("entryContainer").style.display = "none"
+        document.getElementById("textContainer").style.display = "block"
+        document.getElementById("listIcon").src = "assets/text.svg"
+        document.getElementById("info").style.backgroundImage = "url(assets/back.svg)"
+        document.getElementById("tabSubtitle").innerHTML = "Información: " + elementsData[tab.selected][entry.selected].name
+        document.getElementById("textContainer").innerHTML = informationData[tab.selected][entry.selected]
     }
 }
 
@@ -156,7 +291,7 @@ function compactMode() {
         document.getElementById("socialContainer").style.right = "auto"
         document.getElementById("socialContainer").style.top = "auto"
         document.getElementById("socialContainer").style.bottom = "20px"
-        document.getElementById("socialContainer").style.left = "84px"
+        document.getElementById("socialContainer").style.left = "64px"
 
         // This changes a CSS variable which is used for the tab buttons width
         document.documentElement.style.setProperty("--tabWidth", "180px")
