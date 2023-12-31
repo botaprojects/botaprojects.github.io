@@ -28,6 +28,9 @@ fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/in
     }
 )
 
+setTimeout(function(){document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Cargando information.json...<br>Falló al cargar information.json"}, 3000)
+setTimeout(function(){document.getElementById("loading").style.opacity = "0"}, 5000)
+
 
 
 // ------------------------ Defaults ------------------------ //
