@@ -1,7 +1,14 @@
 document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json..."
 fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/elements.json")
-    .then(response => response.json())
-    .then(data => {
+    .then(response => {
+    if (!response.ok) {
+        document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Falló al cargar elements.json"
+    }
+    return response.json()
+    }
+    )
+    .then(
+        data => {
         elementsData = data
         document.getElementById("header").style.display = "block"
         document.getElementById("mainContainer").style.display = "block"
@@ -20,16 +27,20 @@ function main() {
 
 document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Cargando information.json..."
 fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/information.json")
-    .then(response => response.json())
+.then(response => {
+    if (!response.ok) {
+        document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Cargando information.json...<br>Falló al cargar information.json"
+        setTimeout(function(){document.getElementById("loading").style.opacity = "0"}, 3000)
+    }
+    return response.json()
+    }
+    )
     .then(data => {
         informationData = data
         document.getElementById("loading").style.display = "none"
         updateButtons()
     }
 )
-
-setTimeout(function(){document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Cargando information.json...<br>Falló al cargar information.json"}, 3000)
-setTimeout(function(){document.getElementById("loading").style.opacity = "0"}, 5000)
 
 
 
