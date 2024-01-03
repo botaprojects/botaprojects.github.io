@@ -1,5 +1,5 @@
 document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json..."
-fetch("https://raw.githubusercontent.com/OptiJuegos/OptiJuegos.github.io/main/elements.json")
+fetch("https://raw.githubusercontent.com/botaprojects/botaprojects.github.io/main/elements.json")
     .then(response => {
     if (!response.ok) {
         document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements.json...<br>Falló al cargar elements.json"
