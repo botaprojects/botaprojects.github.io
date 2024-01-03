@@ -1,7 +1,7 @@
 {
 "t1": {
-"title": "Juegos Discord Host",
-"subtitle": "Juegos en partes con un instalador subidos a discord.",
+"title": "Discord Host",
+"subtitle": "Juegos en partes subidos de 25mb con instalador",
 "e1": {
 "name": "Geometry Dash 2.2",
 "l1": "https://cdn.discordapp.com/attachments/1187206080003063869/1187206232554090496/GeometryDash22_Install.zip"
@@ -21,7 +21,7 @@
 },
 "t2": {
 "title": "OptiChina",
-"subtitle": "Minecraft China Edition optimizado, proyecto cancelado.",
+"subtitle": "Proyecto cancelado",
 "e1": {
 "name": "1.12 beta1",
 "l1": "https://www.mediafire.com/file/pfbcr4w9olzi4b9/OptiChina_1.12_beta1.7z/file"
@@ -29,7 +29,7 @@
 },
 "t3": {
 "title": "OptiEdu",
-"subtitle": "Minecraft Education Edition optimizado, proximamente...",
+"subtitle": "Minecraft Education Edition optimizado",
  "e1": {
 "name": "Proximamente...",
 "l1": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
