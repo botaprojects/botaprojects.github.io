@@ -54,9 +54,13 @@
 "t3": {
 "title": "Otros",
 "subtitle": "Otros proyectos",
- "e1": {
+"e1": {
 "name": "Minecraft Classic portable y optimizado",
 "l1": "https://cdn.discordapp.com/attachments/1192225848871366798/1192638457097494618/MC_Classic.7z"
+},
+"e2": {
+"name": "Minecraft 1.8.8 WEB",
+"l1": "https://botaprojects.github.io/Minecraft.html"
 }
 }
 }
