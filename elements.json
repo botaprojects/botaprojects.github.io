@@ -17,6 +17,14 @@
 "e4": {
 "name": "GTA 4 (por Optijuegos)",
 "l1": "https://cdn.discordapp.com/attachments/1188158692730867763/1188158865594925066/GTA4_Install.zip"
+},
+"e5": {
+"name": "Worldbox: God Simulator",
+"l1": "https://cdn.discordapp.com/attachments/1148140843576868884/1192304940316643338/Worldbox_Install.zip"
+},
+"e6": {
+"name": "Plants vs Zombies (2009)",
+"l1": "https://cdn.discordapp.com/attachments/1148140843576868884/1192299550237544470/PvZ_Install.zip"
 }
 },
 "t2": {
@@ -33,6 +41,22 @@
  "e1": {
 "name": "Proximamente...",
 "l1": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+}
+},
+"t2": {
+"title": "OptiChina",
+"subtitle": "Proyecto cancelado",
+"e1": {
+"name": "1.12 beta1",
+"l1": "https://www.mediafire.com/file/pfbcr4w9olzi4b9/OptiChina_1.12_beta1.7z/file"
+ }
+},
+"t3": {
+"title": "Otros",
+"subtitle": "Otros proyectos",
+ "e1": {
+"name": "Minecraft Classic portable y optimizado",
+"l1": "https://cdn.discordapp.com/attachments/1192225848871366798/1192638457097494618/MC_Classic.7z"
 }
 }
 }
